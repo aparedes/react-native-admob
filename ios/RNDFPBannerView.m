@@ -42,6 +42,10 @@
         return kGADAdSizeSmartBannerPortrait;
     } else if ([bannerSize isEqualToString:@"smartBannerLandscape"]) {
         return kGADAdSizeSmartBannerLandscape;
+    } else if ([bannerSize isEqualToString:@"smallNordic"]) {
+        return GADAdSizeFromCGSize(CGSizeMake(320, 160));
+    } else if ([bannerSize isEqualToString:@"bigNordic"]) {
+        return GADAdSizeFromCGSize(CGSizeMake(320, 320));
     }
     else {
         return kGADAdSizeBanner;

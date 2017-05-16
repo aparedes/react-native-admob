@@ -241,6 +241,10 @@ public class RNPublisherBannerViewManager extends SimpleViewManager<ReactViewGro
         return AdSize.SMART_BANNER;
       case "smartBanner":
         return AdSize.SMART_BANNER;
+      case "smallNordic":
+        return new AdSize(320, 160);
+      case "bigNordic":
+        return new AdSize(320, 320);
       default:
         return AdSize.BANNER;
     }
